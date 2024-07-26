@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Using 'Roboto' as the custom font */
+    color: #fff;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+h1, h2, p, a, .btn, .nav-link, .navbar-brand {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Apply the custom font to all text elements */
+}
+
+p {
+    font-size: 1.2em;
+}
+
+#particles-js {
+    position: fixed; /* Fix position to cover the viewport */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    z-index: -1; /* Ensure it's behind other content */
+    background-color: #000; /* Background color, if needed */
+}
+
+/* Navbar with transparent background */
+.navbar {
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5) !important; /* Transparent background */
+    border: none; /* Remove border if any */
+    font-size: 1.2em; /* Adjust this value to increase/decrease the navbar text size */
+}
+
+/* Optional: Change the color of the navbar items to stand out against the background */
+.navbar-nav .nav-link {
+    color: #fff !important; /* White text color */
+    position: relative; /* Required for the underline effect */
+    transition: color 0.3s; /* Smooth transition for color */
+    margin: 0 15px; /* Add spacing between navbar items */
+}
+
+/* Change the color of the navbar brand to white */
+.navbar-brand {
+    color: #fff !important; /* White text color */
+    font-size: 1.5em; /* Adjust this value to increase/decrease the brand text size */
+}
+
+/* Thick underline on hover */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px; /* Thickness of the underline */
+    left: 50%;
+    bottom: -5px; /* Adjust based on spacing */
+    background-color: #fff; /* Color of the underline */
+    transition: width 0.3s, left 0.3s; /* Smooth transition for width and position */
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+#home .content {
+    margin-top: 30vh; /* Adjust this value to move the content up or down */
+    transform: translateY(-50%);
+}
+
+.logo {
+    width: 150px; /* Increase width */
+    height: 150px; /* Increase height */
+}
+
+h1, h2 {
+    margin: 20px 0;
+    font-size: 1.5em; /* Adjust this value to increase/decrease the heading size */
+}
+
+.certification-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the items horizontally */
+    position: relative;
+    overflow: hidden; /* Ensure no scrollbars appear */
+    padding: 0 20px; /* Add horizontal padding to prevent clipping */
+}
+
+.certification-list {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items stay on a single line */
+    gap: 30px; /* Space between items */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+    padding: 10px 0; /* Add padding to prevent items from touching the edges */
+    width: auto; /* Adjust width based on the content */
+    box-sizing: border-box; /* Include padding in width calculation */
+    justify-content: flex-start; /* Align items to the start for proper scrolling */
+}
+
+.certification-item {
+    flex: 0 0 auto; /* Prevent items from shrinking or growing */
+    width: 350px; /* Fixed width for each item */
+    text-align: center;
+}
+
+
+
+
+.certification-img {
+    width: 100%; /* Ensure image fills the item width */
+    height: 250px; /* Fixed height for each image */
+    object-fit: cover; /* Ensure image covers the box without distortion */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2; /* Ensure buttons are above the content */
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items horizontally */
+}
+
+.project-item {
+    margin: 20px 0; /* Space between project items */
+}
+
+.btn-primary {
+    font-size: 16px; /* Adjust font size */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    text-decoration: none; /* Remove underline from the button */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Change color on hover */
+    border-color: #004085; /* Change border color on hover */
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center; /* Center align the contact items */
+    gap: 15px; /* Space between contact items */
+}
+
+.contact-list .btn {
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* Adjust font size */
+    padding: 5px 10px; /* Adjust padding */
+}
+
+.contact-list .btn img {
+    margin-right: 8px; /* Space between icon and text */
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Adjust icon size */
+}
+
+
+.contact-list {
+    margin-bottom: 10px;
+}
